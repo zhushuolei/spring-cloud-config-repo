@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: feignServiceB
+server:
+    port: 8002
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:${server.port}/eureka/
